@@ -25,8 +25,45 @@ class Game extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: Column(children: [child: Row()])
-      ),
+          child: Column(children: [
+        Padding(
+          padding: const EdgeInsets.all(30.0),
+          child: Row(
+            children: [
+              Text(
+                '🤍40',
+                style: TextStyle(fontSize: 30.0,color: Colors.red),
+              ),
+              Spacer(),
+              Text(
+                '🐉',
+                style: TextStyle(
+                  fontSize: 100.0,
+                ),
+              ),
+            ],
+          ),
+        ),
+        SizedBox(height: 30.0,),
+        SizedBox(height: 20.0,),
+        Text(
+          '🏹',
+          style: TextStyle(fontSize: 100.0),
+        ),
+        SizedBox(height: 30.0,),
+        SizedBox(height: 20.0,),
+        Padding(
+          padding: const EdgeInsets.all(30.0),
+          child: Row(
+            children: [
+              Text('🤴',style: TextStyle(fontSize: 100.0),),
+              // Icon(Icons.wa),
+              Spacer(),
+              Text('🤍30',style: TextStyle(fontSize: 30.0,color: Colors.red),),
+            ],
+          ),
+        )
+      ])),
     );
   }
 }
